@@ -92,7 +92,7 @@ int main() {
 
     mmap_page->aux_offset = 4096 + 4096 * 4096;
     // 256 MiB
-    mmap_page->aux_size = 4096 * 8;
+    mmap_page->aux_size = 4096 * 4096 * 8;
     // print_perf_event_mmap_info(mmap_page);
 
     std::cout << "mmap aux ring buffer (size=" << mmap_page->aux_size << ")..." << std::endl;
